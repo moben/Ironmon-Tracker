@@ -10,11 +10,11 @@ PLACEHOLDER = "---" -- TODO: Consider moving into a better global constant locat
 print("\nIronmon-Tracker v" .. TRACKER_VERSION)
 
 -- Check the version of BizHawk that is running
-if string.sub(client.getversion(), 1) ~= "2.8" then
-	print("This version of BizHawk is not supported. Please update to version 2.8 or higher.")
-	-- Bounce out... Don't pass Go! Don't collect $200.
-	return
-end
+-- if string.sub(client.getversion(), 1) ~= "2.8" then
+-- 	print("This version of BizHawk is not supported. Please update to version 2.8 or higher.")
+-- 	-- Bounce out... Don't pass Go! Don't collect $200.
+-- 	return
+-- end
 
 -- Root folder for the project data and sub scripts
 DATA_FOLDER = "ironmon_tracker"
