@@ -21,7 +21,7 @@ DATA_FOLDER = "ironmon_tracker"
 
 -- Get the user settings saved on disk and create the base Settings object
 INI = dofile(DATA_FOLDER .. "/Inifile.lua")
-Settings = INI.parse("Settings.ini")
+Settings = INI.parse(io.open("Settings.ini"):read("*a"), "memory")
 
 -- Import all scripts before starting the main loop
 dofile(DATA_FOLDER .. "/PokemonData.lua")
